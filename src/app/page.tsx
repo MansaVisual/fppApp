@@ -1,4 +1,7 @@
 import api from "@/api"
+import '../../styles/libraries/grid.css'
+import '../../styles/libraries/reset.css'
+import '../../styles/main.css'
 import '../../styles/globals.css'
 
 export default async function Home() {
@@ -14,8 +17,16 @@ export default async function Home() {
                       <img src="" alt="" />
                     </figure>
                   </div>
-                  <ul className="main-menu"><li><a href="#">volver</a></li></ul>
-                  <menu className="cta-button"><li><a href="#"></a></li></menu>
+                  <ul className="main-menu">
+                    <li>
+                      <a href="#">volver</a>
+                    </li>
+                  </ul>
+                  <menu className="cta-button">
+                    <li>
+                      <a href="#">CTA</a>
+                    </li>
+                  </menu>
                 </div>
               </nav>
             </header>

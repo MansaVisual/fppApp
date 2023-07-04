@@ -1,3 +1,20 @@
 main{
     background-color: red;
 }
+
+/* @group Example
+------------------------------------ */
+
+@media only screen
+and (min-width : 961px) {
+}
+@media only screen
+and (min-width : 961px)
+and (max-width : 1440px) {
+}
+@media only screen
+and (min-width : 0)
+and (max-width : 960px) {
+}
+
+/* @end */

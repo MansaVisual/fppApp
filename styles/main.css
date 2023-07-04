@@ -1,0 +1,325 @@
+/* FONTS
+Listas fuentes para uso
+--- */
+
+/* @group SHARED STRUCTURES AND STYLES
+------------------------------------ */
+body { overflow-x: hidden; }
+#wrapper { width: 100%; }
+a, button { cursor: pointer;
+    -webkit-transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, -webkit-transform 0.3s linear;
+    -moz-transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, -moz-transform 0.3s linear;
+    -ms-transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear;
+    -o-transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear;
+    transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear;
+}
+.video-box,
+.img-box { overflow: hidden; position: relative; }
+.img-box > img { object-fit: cover; object-position: center center; height: 100%; width: 100%!important; }
+.img-box video { object-fit: cover; object-position: center center; height: 100%; width: 100%!important; }
+@supports(object-fit: cover) {
+  .img-box > img { height: 100%!important; }
+}
+.outerAbsolute { position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 3; }
+.outerAbsolute .row { height: 100%; }
+.outerAbsolute a,
+.outerAbsolute .box { pointer-events: all; }
+/* .site-nav + .page-header { margin-top: 6.2rem; padding-top: 6rem; }
+.site-nav + .content-main { padding-top: 12.2rem; } */
+/* General Text
+----------------------*/
+h1,
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+li,
+p { font-size: 2em; font-weight: 300; letter-spacing: .75px; line-height: 1.5em; }
+li li { font-size: 1em; }
+.body-copy ul { padding-left: 2rem; }
+.body-copy ul li { list-style: disc outside none; }
+.body-copy ol { padding-left: 2rem; }
+/* Form
+----------------------*/
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+input[type="search"],
+input[type="file"],
+select,
+textarea { color: var(--blue); font-size: 2em; letter-spacing: .75px; line-height: 1.25em; height: 4.2rem; padding: 0 0 1.7rem; width: 100%; border-bottom: .1rem solid var(--blue); background: none var(--form-bg); }
+select { padding-right: 2rem; }
+textarea { height: 15rem; padding: 1.2rem .9rem; border: .1rem solid var(--blue); display: flex; justify-content: center; align-items: center; color: var(--red); font-size: 2em; }
+::placeholder { color:  var(--blue); transition: opacity 0.3s linear; }
+.fake-wrapper,
+.select-wrapper { position: relative; width: 100%; }
+.fake-wrapper i { position: absolute; top: 2.1rem; right: 2rem; pointer-events: none; color: var(--blue); font-size: 1.3em; }
+.date-wrapper { max-width: 21.5rem; position: relative; }
+.date-wrapper i { position: absolute; height: 5rem; color: var(--red); font-size: 2em; width: 5rem; border-right: .1rem solid var(--blue); top: 0; z-index: 2; pointer-events: none; display: flex; justify-content: center; align-items: center; }
+.date-wrapper input[type="text"],
+.date-wrapper input[type="date"] { border: .1rem solid var(--blue); text-align: right; padding: 1.2rem 2.3rem 1.2rem 5.2rem; height: 5rem; }
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="file"]:focus,
+select:focus,
+textarea:focus { color: var(--red); border-color: var(--red); border-style: solid; }
+select:focus { border-bottom: .1rem solid var(--red); }
+textarea:focus { border: .1rem solid var(--red); }
+:focus::placeholder { opacity: 0; }
+label { font-size: 2em; letter-spacing: 0.75px; line-height: 1.25em; }
+label small { font-size: .600em; margin-left: .9rem; }
+
+/* Bttn
+----------------------*/
+.bttn {
+    width: auto;
+    padding: 1.8rem 0;
+    font-size: 2.4em;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: unset;
+    text-transform: uppercase;
+    background-color: var(--cyan);
+ }
+
+.bttn-transparent { background: none transparent; }
+@media only screen
+and (min-width : 961px) {
+  /* .site-nav + .page-header { margin-top: 5.5rem; padding-top: 6.6rem; }
+  .site-nav + .content-main { padding-top: 12.1rem; } */
+  /* General Text
+  ----------------------*/
+  h1,
+  h2 { font-size: 4.5em; line-height: 1.112em; }
+  h4 { font-weight: 400; }
+  li,
+  p { line-height: 1.25em; }
+  /* Bttn
+  ----------------------*/
+  .bttn { display: inline-block; width: auto; }
+  @media (hover: hover) {
+  }
+}
+@media only screen
+and (min-width : 961px)
+and (max-width : 1440px) {
+}
+@media only screen
+and (min-width : 0)
+and (max-width : 960px) {
+}
+/* Animations
+----------------------*/
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes grow {
+  0% { heigth: 0; }
+  100% { height: 100%; }
+}
+@keyframes fadeReverse {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeDown {
+  0% { translate: 0 -2rem 0; opacity: 0; }
+  100% { translate: 0 0 0; opacity: 1; }
+}
+@keyframes fadeUp {
+  0% { translate: 0 5rem 0; opacity: 0; }
+  100% { translate: 0 0 0; opacity: 1; }
+}
+@keyframes fadeScaleFull {
+  0% { scale: 0; opacity: 0; }
+  100% { scale: 1; opacity: 1; }
+}
+@keyframes fadeScale {
+  0% { scale: .5; opacity: 0; }
+  100% { scale: 1; opacity: 1; }
+}
+@keyframes fadeScaleReverse {
+  0% { scale: 1.5; opacity: 0; }
+  100% { scale: 1; opacity: 1; }
+}
+@keyframes fadeScaleDown {
+  0% { scale: 1.2; opacity: 0; }
+  100% { scale: 1; opacity: 1; }
+}
+@keyframes ScaleDown {
+  0% { scale: 1.2; }
+  100% { scale: 1; }
+}
+@keyframes fadeLeft {
+  0% { translate: -5rem 0 0; opacity: 0; }
+  100% { translate: 0 0 0; opacity: 1; }
+}
+@keyframes fadeRight {
+  0% { translate: 5rem 0 0; opacity: 0; }
+  100% { translate: 0 0 0; opacity: 1; }
+}
+@keyframes toLeft {
+  0% { translate: 80% 0 0; rotate: -2.5deg; }
+  100% { translate: 0 0 0; rotate: 0deg; }
+}
+@keyframes toRight {
+  0% { translate: -80% 0 0; rotate: 2.5deg; }
+  100% { translate: 0 0 0; rotate: 0deg; }
+}
+@keyframes menuDown {
+ 0% { translate: 0 -7.5rem 0; }
+ 100% { translate: 0 0 0; }
+}
+@keyframes textUp {
+ 0% { translate: 0 2rem 0; opacity: 0; }
+ 100% { translate: 0 0 0; opacity: 1; }
+}
+@keyframes navDown {
+ 0% { translate: 0 -2rem 0; }
+ 100% { translate: 0 0 0; }
+}
+@keyframes fullDown {
+ 0% { translate: 0 -100% 0; }
+ 100% { translate: 0 0 0; }
+}
+@keyframes fullUp {
+ 0% { translate: 0 100% 0; }
+ 100% { translate: 0 0 0; }
+}
+@keyframes fullUpOp {
+ 0% { translate: 0 100% 0; opacity: 0; }
+ 100% { translate: 0 0 0; opacity: 1; }
+}
+@keyframes fullLeft {
+ 0% {  translate: -100% 0 0; opacity: 0; }
+ 100% { translate: 0 0 0; opacity: 1; }
+}
+@keyframes fullRight {
+ 0% {  translate: 100% 0 0; opacity: 0; }
+ 100% { translate: 0 0 0; opacity: 1; }
+}
+@keyframes hvr-icon-hang {
+  0% { translate: 0 .6rem 0; }
+  50% { translate: 0 .2rem 0; }
+  100% { translate: 0 .6rem 0; }
+}
+@keyframes hvr-icon-hang-sink {
+  100% { translate: 0 .6rem 0; }
+}
+@keyframes toTopFromBottom {
+	49% { translate: 0 -100% 0; }
+	50% { opacity: 0; translate: 0 100% 0; }
+	51% { opacity: 1; }
+}
+@keyframes toBottomFromTop {
+	49% { translate: 0 100% 0; }
+	50% { opacity: 0; translate: 0 -100% 0; }
+	51% { opacity: 1; }
+}
+@keyframes toRightFromLeft {
+	49% { translate: 100% 0 0; }
+	50% { opacity: 0; translate: -100% 0 0; }
+	51% { opacity: 1; }
+}
+@keyframes toLeftFromRight {
+	49% { translate: -100% 0 0; }
+	50% { opacity: 0; translate: 100% 0 0; }
+	51% { opacity: 1; }
+}
+@keyframes openDraw {
+  0% { max-height: 0; }
+  100% { max-height: 999vh; }
+}
+@keyframes closeDraw {
+  0% { max-height: 999vh; }
+  100% { max-height: 0; }
+}
+@keyframes fadeRotate {
+  0% { opacity: 0; }
+  100% { opacity: 1; rotate: 720deg; }
+}
+@keyframes circleSVGnoScale {
+  0% { rotage: 360deg; }
+  100% { rotage: 0deg; }
+}
+@keyframes filltext {
+  0% { background-size: 0% 100%; }
+  100% { background-size: 100% 100%; }
+}
+@keyframes emptytext {
+  0% { background-size: 100% 100%; }
+  100% { background-size: 0% 100%; }
+}
+@keyframes bannerDown {
+  0% { translate: 0 -8rem 0; }
+  100% { translate: 0 0 0; }
+}
+@keyframes upndown {
+    0% { translate: 0 .5rem 0; }
+    50% { translate: 0 0 0; }
+    100% { translate: 0 .5rem 0; }
+}
+@keyframes circleLife {
+  0% { stroke-dashoffset: 523; }
+  100% { stroke-dashoffset: 0; }
+}
+.fadeRight,
+.fadeLeft,
+.fadeDown,
+.fadeUp,
+.fadeScale,
+.fade { position: absolute; left: -999vw; opacity: 0; top: -999vw; }
+/* Animations - Active
+----------------------*/
+.fade.active { animation: fade 1.2s 1 cubic-bezier(0.4,0.0,0.2,1) forwards; left: auto; top: auto; position: relative; }
+.fade.slick-nav.active,
+.fade.slick-carousel.active { position: relative!important; }
+.fadeUp.active { animation: fadeUp 1.2s 1 cubic-bezier(0.4,0.0,0.2,1) forwards; left: auto; top: auto; position: relative; }
+.fadeDown.active { animation: fadeDown 1.2s 1 cubic-bezier(0.4,0.0,0.2,1) forwards; left: auto; top: auto; position: relative; }
+.fadeScale.active { animation: fadeScale 1.2s 1 cubic-bezier(0.4,0.0,0.2,1) forwards; left: auto; top: auto; position: relative; }
+.fadeLeft.active { animation: fadeLeft 1.2s 1 cubic-bezier(0.4,0.0,0.2,1) forwards; left: auto; top: auto; position: relative; }
+.fadeRight.active { animation: fadeRight 1.2s 1 cubic-bezier(0.4,0.0,0.2,1) forwards; left: auto; top: auto; position: relative; }
+/* @end */
+
+/* @group RESET GENERAL DE TAMAÑO
+------------------------------------ */
+
+
+@media only screen
+and (min-width : 961px) {
+  .mobile { display: none!important; }
+}
+@media only screen
+and (min-width : 961px)
+and (max-width : 1511px) {
+  /* html { font-size: calc(5px + (10 - 5) * ((100vw - 961px) / (1512 - 961))); } */
+}
+@media only screen
+and (min-width : 1512px) {
+  /* html { font-size: calc(10px + (16 - 10) * ((100vw - 1512px) / (4280 - 1512))); } */
+}
+@media only screen
+and (min-width : 0)
+and (max-width : 960px) {
+  .no-mobile { display: none!important; }
+  /* html { font-size: 7px; } */
+}
+@media only screen
+and (min-width : 0)
+and (max-width : 600px) {
+  /* html { font-size: 5px; } */
+}
+/* @end */
+
+/* --- */
