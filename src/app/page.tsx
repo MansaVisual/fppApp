@@ -10,23 +10,28 @@ export default async function Home() {
   return <div id="wrapper">
           {/* header  */}
             <header>
-              <nav className="site-nav">
-                <div className="row-container">
-                  <div className="logo">
-                    <figure>
-                      <img src="" alt="" />
-                    </figure>
+              <nav className="site-nav container">
+                <div className="row">
+                  <div className="col-36-5">
+                    <div className="logo">
+                      <figure>
+                        <img src="" alt="" />
+                      </figure>
+                    </div>
                   </div>
-                  <ul className="main-menu">
-                    <li>
-                      <a href="#">volver</a>
-                    </li>
-                  </ul>
-                  <menu className="cta-button">
-                    <li>
-                      <a href="#">CTA</a>
-                    </li>
-                  </menu>
+
+                  <div className="col-36-28">
+                    <ul className="main-menu">
+                      <li>
+                        <a href="#">volver</a>
+                      </li>
+                    </ul>
+                    <menu className="cta-button">
+                      <li>
+                        <a href="#">CTA</a>
+                      </li>
+                    </menu>
+                  </div>
                 </div>
               </nav>
             </header>

@@ -46,7 +46,7 @@
 
 @media only screen
 and (min-width : 961px) {
-	[class^="col-"], [class*=" col-"] { padding: 0 2rem; }
+	[class^="col-"], [class*=" col-"] { padding: 0 1rem; }
   /* ORDER GENERAL
 	----------------------------------- */
   .order-first { -ms-flex-order: -1; order: -1; }
