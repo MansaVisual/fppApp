@@ -8,11 +8,19 @@ export default async function Home() {
   const links = await api.links.fetch();
   
   return <div id="wrapper">
-          <section className="image-header">
-            <figure className="img-box">
-              <img src="/images/background-header.jpg" alt="image header" />
-            </figure>
+
+          {/* image header */}
+          <section className="image-header container">
+            <div className="row full-width">
+              <div className="col-36-36">
+                <figure className="img-box">
+                  <img src="/images/background-header.jpg" alt="image header" />
+                </figure>
+              </div>
+            </div>
           </section>
+          {/* image header */}
+
           {/* header  */}
             <header>
               <nav className="site-nav container">
@@ -42,7 +50,7 @@ export default async function Home() {
             </header>
           {/* header  */}
 
-          {/* image main */}
+          {/* image start main */}
           <section className="image-main container">
             <div className="row">
               <div className="col-36-34 offset-left-36-1">
@@ -52,7 +60,7 @@ export default async function Home() {
               </div>
             </div>
           </section>
-          {/* image main */}
+          {/* image start main */}
 
           {/* main */}
             <main className="content-main container">

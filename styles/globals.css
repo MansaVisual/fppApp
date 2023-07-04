@@ -1,5 +1,25 @@
 @media only screen
 and (min-width : 961px) {
+    /* header 
+    ---------------------*/
+    .image-header figure{
+        height: 4.1rem;
+    }
+    .site-nav{
+        width: 100%;
+        background-color: var(--dark-blue);
+        border-bottom: 0.9rem solid var(--cyan);
+    }
+    .site-nav .row{
+        height: 8.3rem;
+    }
+    .site-nav .logo{
+        display: block;
+        width: 14rem;
+    }
+    .site-nav .row .col-36-5{
+        top: -1.5rem;
+    }
 }
 @media only screen
 and (min-width : 961px)
