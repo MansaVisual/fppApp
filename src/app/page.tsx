@@ -8,14 +8,19 @@ export default async function Home() {
   const links = await api.links.fetch();
   
   return <div id="wrapper">
+          <section className="image-header">
+            <figure className="img-box">
+              <img src="/images/background-header.jpg" alt="image header" />
+            </figure>
+          </section>
           {/* header  */}
             <header>
               <nav className="site-nav container">
                 <div className="row">
                   <div className="col-36-5 offset-left-36-2">
                     <div className="logo">
-                      <figure>
-                        <img src="" alt="" />
+                      <figure className="img-box">
+                        <img src="/images/federacionportenadepatin.png" alt="logo" />
                       </figure>
                     </div>
                   </div>
@@ -37,17 +42,17 @@ export default async function Home() {
             </header>
           {/* header  */}
 
-          {/* image header */}
-          <section className="image-header container">
+          {/* image main */}
+          <section className="image-main container">
             <div className="row">
               <div className="col-36-34 offset-left-36-1">
-                <figure>
-                  <img src="#" alt="#" />
+                <figure className="img-box">
+                  <img src="/images/background-bajadas.png" alt="logo" />
                 </figure>
               </div>
             </div>
           </section>
-          {/* image header */}
+          {/* image main */}
 
           {/* main */}
             <main className="content-main container">
@@ -74,7 +79,13 @@ export default async function Home() {
                 <section className="info col-36-14 offset-left-36-11">
                   <ul className="social-media">
                     <li>
-                      <a href=""></a>
+                      <a href="#">facebook</a>
+                    </li>
+                    <li>
+                      <a href="#">instagram</a>
+                    </li>
+                    <li>
+                      <a href="#">twitter</a>
                     </li>
                   </ul>
                   <address>
