@@ -1,8 +1,4 @@
-/* FONTS
-Listas fuentes para uso
---- */
-
-/* @group SHARED STRUCTURES AND STYLES
+/* SHARED STRUCTURES AND STYLES
 ------------------------------------ */
 body { overflow-x: hidden; }
 #wrapper { width: 100%; }
@@ -290,11 +286,9 @@ and (max-width : 960px) {
 .fadeScale.active { animation: fadeScale 1.2s 1 cubic-bezier(0.4,0.0,0.2,1) forwards; left: auto; top: auto; position: relative; }
 .fadeLeft.active { animation: fadeLeft 1.2s 1 cubic-bezier(0.4,0.0,0.2,1) forwards; left: auto; top: auto; position: relative; }
 .fadeRight.active { animation: fadeRight 1.2s 1 cubic-bezier(0.4,0.0,0.2,1) forwards; left: auto; top: auto; position: relative; }
-/* @end */
 
-/* @group RESET GENERAL DE TAMAÑO
+/* RESET GENERAL DE TAMAÑO
 ------------------------------------ */
-
 
 @media only screen
 and (min-width : 961px) {
@@ -320,6 +314,3 @@ and (min-width : 0)
 and (max-width : 600px) {
   /* html { font-size: 5px; } */
 }
-/* @end */
-
-/* --- */
