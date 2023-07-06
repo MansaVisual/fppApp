@@ -8,7 +8,7 @@
 [class^="icon-"]::before, [class*=" icon-"]::before { display: block; }
 :root {
 	/*fonts */
-	--oswald-font: 'Oswald', Arial, helvetica sans-serif;
+	--oswald-font: 'Oswald', sans-serif;
 	/*colors*/
 	--grey: rgba(229, 229, 229,1);
     --cyan: rgba(53, 180, 182, 1);
