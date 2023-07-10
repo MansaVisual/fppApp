@@ -1,16 +1,20 @@
+'use client'
 import api from "@/api"
 import Head from 'next/head';
 import '../../styles/libraries/grid.css'
 import '../../styles/libraries/reset.css'
 import '../../styles/main.css'
 import '../../styles/globals.css'
+import Menu from '../components/menu';
+
+
 
 export default async function Home() {
   const links = await api.links.fetch();
   
   return <>
           <Head>
-            <script src="/site-nav.js" />
+            {/* <script src="/js/site-nav.js" /> */}
           </Head>
           <div id="wrapper">
             {/* image header */}
@@ -27,42 +31,7 @@ export default async function Home() {
 
             {/* header  */}
               <header>
-                <nav className="site-nav container">
-                  <div className="row center top">
-                    <div className="col-36-5">
-                      <div className="logo">
-                        <figure className="img-box">
-                          <img src="/images/federacionportenadepatin.png" alt="logo" />
-                        </figure>
-                      </div>
-                      <div className="mobile">
-                        <button className="toggle-mene"></button>
-                      </div>
-                    </div>
-
-                    <div className="col-36-28 offset-left-36-1">
-                      <ul className="main-menu">
-                        <li>
-                          <a href="#">Home</a>
-                        </li>
-                        <li>
-                          <a href="#">Institucional</a>
-                        </li>
-                        <li>
-                          <a href="#">Deportes</a>
-                        </li>
-                        <li>
-                          <a href="#">Contacto</a>
-                        </li>
-                      </ul>
-                      <menu className="cta-button">
-                        <li>
-                          <a href="#">PADRÓN</a>
-                        </li>
-                      </menu>
-                    </div>
-                  </div>
-                </nav>
+                <Menu/>
               </header>
             {/* header  */}
 
@@ -122,6 +91,6 @@ export default async function Home() {
             {/* footer */}
 
           </div> 
-          // @end wrapper
+          {/* @end wrapper */}
         </>
 }
