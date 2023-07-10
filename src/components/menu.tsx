@@ -8,10 +8,16 @@ const Menu = () => {
         
             const menuToggle = document.querySelector('.toggle-menu');
             const nav = document.querySelector('.site-nav .col-36-28')
+            const closeButton = document.querySelector('.close-menu');
 
             menuToggle?.addEventListener('click', () =>{
                 menuToggle?.classList.toggle('active');
                 nav?.classList.toggle('active');
+            });
+
+            closeButton?.addEventListener('click', () =>{
+                menuToggle?.classList.remove('active');
+                nav?.classList.remove('active');
             });
         
     }, []);
@@ -32,6 +38,12 @@ const Menu = () => {
                 </div>
 
                 <div className="col-36-28 offset-left-36-1">
+                    <header className='mobile'>
+                        <a className='logo-mobile'></a>
+                        <button className="close-menu">
+                            X
+                        </button>
+                    </header>
                     <ul className="main-menu">
                         <li>
                             <a href="#">Home</a>
