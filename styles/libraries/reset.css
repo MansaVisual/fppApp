@@ -3,12 +3,11 @@
 /* @-ms-viewport{width:device-width} */
 @-o-viewport{width:device-width}
 @viewport{width:device-width}
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
 
 [class^="icon-"]::before, [class*=" icon-"]::before { display: block; }
 :root {
 	/*fonts */
-	--oswald-font: 'Oswald', sans-serif;
+	--font-oswald: 'Oswald', sans-serif;
 	/*colors*/
 	--grey: rgba(229, 229, 229,1);
     --cyan: rgba(53, 180, 182, 1);
@@ -54,7 +53,7 @@ input,
 option,
 button {
 	background: none;
-	font-family: var(--oswald-font);
+	font-family: var(--font-oswald);
 	font-weight: 400;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -73,7 +72,7 @@ select::-ms-expand,
 
 html { /* Se resetea el texto para que este en 10px */
 	background: var(--grey);
-	font: 62.5% var(--oswald-font);
+	font: 62.5% var(--font-oswald);
 	line-height: 1;
 	margin: 0px;
 	padding: 0px;
@@ -101,3 +100,5 @@ del { text-decoration: line-through; }
 table { border-collapse: collapse; border-spacing: 0; }
 a { text-decoration: none; color: var(--red); }
 * { -webkit-tap-highlight-color: transparent; }
+
+/* icons */

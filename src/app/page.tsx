@@ -6,6 +6,14 @@ import '../../styles/libraries/reset.css'
 import '../../styles/main.css'
 import '../../styles/globals.css'
 import Menu from '../components/menu';
+import Footer from '../components/footer';
+import '../../public/ico.css';
+import { Oswald } from 'next/font/google'
+ 
+const oswald = Oswald({
+  subsets: ['latin'],
+  variable: '--font-oswald',
+})
 
 
 
@@ -14,9 +22,8 @@ export default async function Home() {
   
   return <>
           <Head>
-            {/* <script src="/js/site-nav.js" /> */}
           </Head>
-          <div id="wrapper">
+          <div id="wrapper" className={oswald.className}>
             {/* image header */}
             <section className="image-header container no-mobile">
               <div className="row full-width">
@@ -51,7 +58,7 @@ export default async function Home() {
               <main className="content-main container">
                 <div className="row">
                   <div className="col-36-34 offset-left-36-1"> 
-                    <ul className="dowloads-menu">
+                    <ul className="downloads-menu">
                       {links.map((link) => (
                         <li key={link.url}>
                           <a href={link.url}>{link.label}</a>
@@ -64,30 +71,7 @@ export default async function Home() {
             {/* main */}
             
             {/* footer */}
-              <footer className="container site-footer">
-                <div className="row">
-                  <aside className="col-36-34 offset-left-36-1 partners">
-                    {/* aca van los logos */}
-                  </aside>
-                  <section className="info col-36-14 offset-left-36-11">
-                    <ul className="social-media">
-                      <li>
-                        <a href="#">facebook</a>
-                      </li>
-                      <li>
-                        <a href="#">instagram</a>
-                      </li>
-                      <li>
-                        <a href="#">twitter</a>
-                      </li>
-                    </ul>
-                    <address>
-                      <p>Av. del Libertador 8620, C1429 - C.A.B.A. - ARGENTINA</p>
-                      <p>TELÉFONO (+54) 11 5591-1077 //  SECRETARIAFPP@GMAIL.COM</p>
-                    </address>
-                  </section>
-                </div>
-              </footer>
+              <Footer/>
             {/* footer */}
 
           </div> 
