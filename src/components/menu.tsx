@@ -48,21 +48,21 @@ const Menu = () => {
                     </header>
                     <ul className="main-menu">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="https://www.fppoficial.com.ar/">Home</a>
                         </li>
                         <li>
-                            <a href="#">institucional</a>
+                            <a href="https://www.fppoficial.com.ar/institucional/">institucional</a>
                         </li>
                         <li>
-                            <a href="#">deportes</a>
+                            <a href="https://www.fppoficial.com.ar/deportes/">deportes</a>
                         </li>
                         <li>
-                            <a href="#">contacto</a>
+                            <a href="https://www.fppoficial.com.ar/contacto/">contacto</a>
                         </li>
                     </ul>
                     <menu className="cta-button no-mobile">
                         <li>
-                            <a href="#">PADRÓN</a>
+                            <a href="https://fepp.pythonanywhere.com/login/?next=/" target="_blank">PADRÓN</a>
                         </li>
                     </menu>
                 </div>
